@@ -1,10 +1,12 @@
 
-import Navbar from './Components/Navbar';
+import HeroImage from "./Components/HeroImage/HeroImage";
+import Navbar from "./Components/Navbarcomponent/Navbar"; 
 
 function App() {
   return (
     <div>
       <Navbar />
+      <HeroImage />
     </div>
   );
 }
