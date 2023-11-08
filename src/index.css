@@ -1,60 +1,42 @@
-
-:root{
-  --css-primary: #34C94B;
-  --css-black: #121212;
-  --css-white: #FFFFFF;
+:root {
+  --css-primary: #34c94b;
+  --css-black : #121212;
+  --css-white : #fff;
 }
 
-body {
-font-family: 'Poppins', sans-serif;
+/* Reset some default browser styles */
+html, body, h1, h2, h3, p, ul, ol, li, dl, dt, dd, blockquote, figure, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  background: var(--css-black);
+  color: var(--css-white);
+  font-family: Poppins;
 }
 
-/*
-1. Use a more-intuitive box-sizing model.
-*/
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Set the base font size and line height */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Ensure images are not scaled beyond their natural size */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove underline from links and make them blue by default */
+a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+/* Apply a basic box-sizing to all elements for consistent sizing */
 *, *::before, *::after {
   box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
-* {
-  margin: 0;
-}
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
-  5. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  6. Remove built-in form typography styles
-*/
-input, button, textarea, select {
-  font: inherit;
-}
-/*
-  7. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-/*
-  8. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
-}
-body{
-  background-color: #121212;
 }
