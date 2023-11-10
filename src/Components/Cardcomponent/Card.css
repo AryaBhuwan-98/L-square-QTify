@@ -31,14 +31,25 @@
 }
 
 .followers {
-    background: white;
+    background:white;
     text-align: center;
     width: 70%;
     border-radius: 12px;
     overflow: hidden;
     margin: 3px;
+    color: black;
 }
 
 .catagory {
     position: absolute;
+}
+.white-border{
+    flex: 1;
+}
+.text{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 0px;
 }
